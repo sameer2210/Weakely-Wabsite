@@ -1,0 +1,192 @@
+<!-- Real Estate Listings Develop property management websites with
+     filters for location, price, amenities, and virtual tours of homes and offices. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Houzez</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2><i class="ri-map-pin-line"></i> Houzez</h2>
+        <div class="link">
+          <a href="">HOME</a>
+          <a href="">ABOUT</a>
+          <a href="">PROPERTIES</a>
+          <a href="">CONTACT</a>
+          <a href="">LOGIN</a>
+          <a href="">SIGN UP</a>
+          <a href="">CART</a>
+          <a href="">FAQs</a>
+        </div>
+        <div class="search-bar">
+          <input type="search" placeholder="Search..." />
+          <button type="submit">Go</button>
+        </div>
+      </nav>
+
+      <div class="hero-image">
+        <div class="text">
+          <h1>Discover Your Dream Home</h1>
+          <p>Find your perfect place to call home</p>
+          <button type="submit">Discover Properties</button>
+          <div class="num">
+            <h4>
+              1200+ <br />
+              <span>Listed Properties</span>
+            </h4>
+            <h4>
+              4500+ <br />
+              <span>Happy Customers</span>
+            </h4>
+            <h4>
+              120+ <br />
+              <span>Awards</span>
+            </h4>
+          </div>
+        </div>
+        <div class="box3">
+          <button>All Status</button>
+          <button>For Rent</button>
+          <button>For Sale</button>
+        </div>
+
+        <div class="filters">
+          <div class="f">
+            <div class="filter-item">
+              <h3>Location</h3>
+              <input type="text" placeholder="Location" />
+            </div>
+            <div class="filter-item">
+              <h3>Price</h3>
+              <input type="text" placeholder="Min" />
+              <input type="text" placeholder="Max" />
+            </div>
+          </div>
+          <div class="filter-item">
+            <h3>Amenities</h3>
+            <input type="checkbox" id="pool" />
+            <label for="pool">Pool</label>
+            <input type="checkbox" id="gym" />
+            <label for="gym">Gym</label>
+            <input type="checkbox" id="parking" />
+            <label for="parking">Parking</label>
+            <button type="submit">Apply Filters</button>
+          </div>
+
+          <div class="sort-by">
+            <h3>Sort By</h3>
+            <select name="sort-by" id="sort-by">
+              <option value="price-asc">Price (Low to High)</option>
+              <option value="price-desc">Price (High to Low)</option>
+              <option value="bedrooms-asc">Bedrooms (Low to High)</option>
+              <option value="bedrooms-desc">Bedrooms (High to Low)</option>
+            </select>
+            <button type="submit">Sort</button>
+          </div>
+        </div>
+      </div>
+      <div class="b1"></div>
+    </header>
+
+    <section>
+      <div class="section1">
+        <div class="popular">
+          <h3>Our Popular Homes</h3>
+          <p>Explore all -></p>
+        </div>
+        <div class="demo">
+          <div class="demo1 bg-[url(https://images.unsplash.com/photo-1605146769289-440113cc3d00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]" ></div>
+          <div class="demo2 bg-[url(https://plus.unsplash.com/premium_photo-1678903964473-1271ecfb0288?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]"></div>
+          <div class="demo3 bg-[url(https://images.unsplash.com/photo-1716807335226-dfe1e2062db1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]"></div>
+        </div>
+
+        <div class="virtual-tour">
+          <h3>Virtual Tour</h3>
+          <div class="tour">
+            <video
+              width="380"
+              loop
+              autoplay
+              muted
+              src="https://media.istockphoto.com/id/1337609764/video/modern-large-wooden-mansion-with-pool-and-garden.mp4?s=mp4-640x640-is&k=20&c=XZkLEYoZvIwqg5i6d4LlohFYtV31XoY8C4-bMzXvSOg="
+            ></video>
+            <video
+              width="380"
+              loop
+              autoplay
+              muted
+              src="https://media.istockphoto.com/id/1428253293/video/modern-european-complex-of-apartment-buildings-aerial-view.mp4?s=mp4-640x640-is&k=20&c=CrUZ4TKmLybyF1Lzf7RKiTh6KL7SX74ePBU_pOmwjaM="
+            ></video>
+            <video
+              width="380"
+              loop
+              autoplay
+              muted
+              src="https://media.istockphoto.com/id/1325933063/video/exterior-of-a-luxury-contemporary-home-luxury-villa-with-infinity-pool.mp4?s=mp4-640x640-is&k=20&c=Hrp1sMhrscY_lYMP2A2aGaJnISoNW3LI9TL6gteNkdQ="
+            ></video>
+          </div>
+        </div>
+      </div>
+
+      <div class="section2">
+        <div class="b1">
+          <video
+            width="100%"
+            loop
+            autoplay
+            muted
+            src="https://media.istockphoto.com/id/1369230251/video/building-design-in-wireframe.mp4?s=mp4-640x640-is&k=20&c=Ow1vZivfgdac-qDfkcAu-WMS8nbdTtuNC3zDDLQVd_g="
+          ></video>
+        </div>
+        <div class="text2">
+          <h1><b>Testimonials</b></h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <br> Explicabo, rerum. Odit placeat praesentium deleniti quibusdam! 
+            <br>Perferendis eligendi fuga minima quod?</p>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <div class="b2"></div>
+      <div class="b3">
+        <div class="t1">
+          <h2>Houzez</h2>
+          <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+          <p>Consectetur adipisicing elit. Debitis accusantium est neque iure labore, nam excepturi harum facere atque ipsam. Adipisicing elit. At consectetur labore soluta molestiae temporibus officiis.</p>
+        </div>
+        <div class="t2">
+          <h3>Email
+            <br> houzez@gmail.com
+          </h3>
+          <br>
+          <address>
+            <h3><u>Address:</u></h3>
+            23-B, near Chai Sutta Bar, Sector C, Indrapuri, Bhopal, Madhya Pradesh 462021 <br> Hours: Opens soon ⋅ 10:30 am
+            <br>
+            <p>Sit amet consectetur adipisicing elit. Quisquam, nesciunt sapiente!</p>
+          </address>
+        </div>
+        <div class="t3">
+          <h4>Phone:</h4>
+          <p>+91 96917 78470</p>
+        </div>
+        <div class="t4">
+          <h3>Follow Us:</h3>
+          <i class="ri-facebook-circle-fill"></i>
+          <i class="ri-instagram-fill"></i>
+          <i class="ri-twitter-x-line"></i>
+        </div>
+      </div>
+    </footer>    
+  </body>
+</html>

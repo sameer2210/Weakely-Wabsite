@@ -1,0 +1,334 @@
+<!-- Podcasting & Content Publishing Platforms Design sites for podcasts, including episode listings,
+        streaming, and subscription options for exclusive content -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Creators</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script defer>
+    // JavaScript to handle the price change
+    function togglePricing(planType) {
+      const plans = [
+        {
+          id: "starter",
+          monthly: "$19/mo",
+          yearly: "$190/yr",
+        },
+        {
+          id: "pro",
+          monthly: "$49/mo",
+          yearly: "$490/yr",
+        },
+        {
+          id: "premium",
+          monthly: "$99/mo",
+          yearly: "$990/yr",
+        },
+      ];
+
+      plans.forEach(plan => {
+        const priceElement = document.querySelector(`#${plan.id} .price`);
+        const typeElement = document.querySelector(`#${plan.id} .type`);
+        if (planType === "yearly") {
+          priceElement.textContent = plan.yearly;
+          typeElement.textContent = "Billed Yearly";
+        } else {
+          priceElement.textContent = plan.monthly;
+          typeElement.textContent = "Billed Monthly";
+        }
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.toggle-pricing').forEach(button => {
+        button.addEventListener('click', event => {
+          event.preventDefault();
+          togglePricing(button.dataset.planType);
+        });
+      });
+    });
+  </script>
+</head>
+
+<body class="text-white font-sans">
+  <!-- Navbar -->
+  <header class="bg-[#1DB954] py-4">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <a href="#" class="text-2xl font-bold">Spotify Creators</a>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">Features</a>
+        <a href="#" class="hover:underline">Pricing</a>
+        <a href="#" class="hover:underline">Contact</a>
+      </nav>
+      <div class="md:hidden">
+        <button class="text-white">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative h-screen">
+    <!-- Video Background -->
+    <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
+      <source src="v.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay and Content -->
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="text-center text-white">
+        <h1 class="text-5xl font-bold mb-6">Create. Share. Connect.</h1>
+        <p class="text-xl mb-8">Empower your music and connect with the world.</p>
+        <a href="#start"
+          class="bg-[#1DB954] text-black px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition">
+          Get Started
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16 bg-gray-900">
+    <div class="container mx-auto text-center px-6">
+      <h2 class="text-4xl font-bold mb-10">Why Choose Us</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <img src="https://img.icons8.com/?size=100&id=bXBdkMlJ2ZY5&format=png&color=000000" alt="Icon"
+            class="mx-auto mb-4">
+          <h3 class="text-2xl font-bold mb-2">Reach Your Audience</h3>
+          <p>Connect with millions of listeners worldwide through a single platform.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <img src="https://img.icons8.com/?size=100&id=43605&format=png&color=000000" alt="Icon" class="mx-auto mb-4">
+          <h3 class="text-2xl font-bold mb-2">Analytics That Matter</h3>
+          <p>Understand your audience and track your growth with detailed insights.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <img src="https://img.icons8.com/?size=100&id=49502&format=png&color=000000" alt="Icon" class="mx-auto mb-4">
+          <h3 class="text-2xl font-bold mb-2">Monetize Your Work</h3>
+          <p>Earn revenue from streams and promotions like never before.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="start" class="px-32 bg-[#1DB954] text-black">
+    <div class="container mx-auto text-center px-6">
+      <h2 class="text-4xl font-bold p-6">Join the Creator Movement</h2>
+      <p class="mb-8">Start your journey with Spotify Creators and take your music career to the next level.</p>
+      <a href="login.html"
+        class="bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-800 transition">
+        Join Now
+      </a>
+    </div>
+
+    <section id="login" class="py-16 bg-gray-900 mt-12">
+      <div class="container mx-auto text-center px-6 flex flex-col items-center">
+        <h2 class="text-4xl font-bold mb-4 text-white">Pricing</h2>
+        <h3 class="text-xl mb-8 text-white">Try us free for 14 days.</h3>
+        <div class="button py-4 w-60 rounded-full bg-black">
+          <a href="#" data-plan-type="monthly"
+            class="toggle-pricing text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition">Monthly</a>
+          <a href="#" data-plan-type="yearly"
+            class="toggle-pricing text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition">Yearly</a>
+        </div>
+
+        <p class="text-white p-4">12 months for the price of 10 when you pay yearly. All prices in USD.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Plan 1 -->
+          <div id="starter" class="bg-white p-6 rounded-lg shadow-md max-w-sm mx-auto">
+            <h3 class="text-2xl font-semibold text-gray-800">Starter</h3>
+            <h1 class="text-4xl font-bold mt-2 text-gray-900 price">$19 <sup class="text-xl font-semibold">/mo</sup></h1>
+            <p class="type">Billed Monthly</p>
+            <button class="mt-4 w-full">
+              <a href="login.html"
+                class="bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-800 transition block text-center">
+                Start Free Trial
+              </a>
+            </button>
+            <div class="mt-6">
+              <h2 class="text-xl font-bold text-center mb-4 text-gray-800">Features</h2>
+              <ul class="space-y-2 text-gray-700">
+                <li>✔ Unlimited podcasts</li>
+                <li>✔ Unlimited Team members/collaborators</li>
+                <li>✔ 50 Private podcast subscribers</li>
+                <li>✔ 20K Monthly downloads</li>
+                <li>✔ Live customer support</li>
+                <li>✔ Advanced analytics</li>
+                <li>✔ Built-in podcast website</li>
+                <li>✔ Podcast network website</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Plan 2 -->
+          <div id="pro" class="bg-white p-6 rounded-lg shadow-md max-w-sm mx-auto">
+            <h3 class="text-2xl font-semibold text-gray-800">Pro</h3>
+            <h1 class="text-4xl font-bold mt-2 text-gray-900 price">$49 <sup class="text-xl font-semibold">/mo</sup></h1>
+            <p class="type">Billed Monthly</p>
+            <button class="mt-4 w-full">
+              <a href="login.html"
+                class="bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-800 transition block text-center">
+                Start Free Trial
+              </a>
+            </button>
+            <div class="mt-6">
+              <h2 class="text-xl font-bold text-center mb-4 text-gray-800">Features</h2>
+              <div class="max-h-60 overflow-y-auto">
+                <ul class="space-y-2 text-gray-700">
+                  <li>✔ Unlimited podcasts</li>
+                  <li>✔ Unlimited Team members/collaborators</li>
+                  <li>✔ 500 Private podcast subscribers</li>
+                  <li>✔ 100K Monthly downloads</li>
+                  <li>✔ Live customer support</li>
+                  <li>✔ Advanced analytics</li>
+                  <li>✔ Built-in podcast website</li>
+                  <li>✔ Podcast network website</li>
+                  <li>✔ Dynamic ads (pre-roll, mid-roll, post-roll)</li>
+                  <li>✔ Dynamic show notes</li>
+                  <li>✔ Auto-post to YouTube</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plan 3 -->
+          <div id="premium" class="bg-white p-6 rounded-lg shadow-md max-w-sm mx-auto">
+            <h3 class="text-2xl font-semibold text-gray-800">Premium</h3>
+            <h1 class="text-4xl font-bold mt-2 text-gray-900 price">$99 <sup class="text-xl font-semibold">/mo</sup></h1>
+            <p class="type">Billed Monthly</p>
+            <button class="mt-4 w-full">
+              <a href="login.html"
+                class="bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-800 transition block text-center">
+                Start Free Trial
+              </a>
+            </button>
+            <div class="mt-6">
+              <h2 class="text-xl font-bold text-center mb-4 text-gray-800">Features</h2>
+              <div class="max-h-60 overflow-y-auto">
+                <ul class="space-y-2 text-gray-700">
+                  <li>✔ Unlimited podcasts</li>
+                  <li>✔ Unlimited Team members/collaborators</li>
+                  <li>✔ 3K Private podcast subscribers</li>
+                  <li>✔ 250K Monthly downloads</li>
+                  <li>✔ Live customer support</li>
+                  <li>✔ Advanced analytics</li>
+                  <li>✔ Built-in podcast website</li>
+                  <li>✔ Podcast network website</li>
+                  <li>✔ Dynamic ads (pre-roll, mid-roll, post-roll)</li>
+                  <li>✔ Dynamic show notes</li>
+                  <li>✔ Auto-post to YouTube</li>
+                  <li>✔ Remove branding</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="py-12">
+    <div class="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <!-- Company Section -->
+      <div>
+        <h3 class="text-lg text-black font-bold mb-4">Company</h3>
+        <ul class="space-y-2 text-black">
+          <li class="flex items-center gap-2">
+            <img src="https://img.icons8.com/?size=50&id=94518&format=png" alt="Icon" class="w-5 h-5">
+            About
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="https://img.icons8.com/?size=50&id=23873&format=png" alt="Icon" class="w-5 h-5">
+            Press & Media
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="https://img.icons8.com/?size=50&id=58649&format=png" alt="Icon" class="w-5 h-5">
+            Careers
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="https://img.icons8.com/?size=50&id=92516&format=png" alt="Icon" class="w-5 h-5">
+            Contact Us
+          </li>
+        </ul>
+      </div>
+
+      <!-- Fine Print Section -->
+      <div>
+        <h3 class="text-lg text-black font-bold mb-4">Fine print</h3>
+        <ul class="space-y-2 text-black">
+          <li class="flex items-center gap-2">
+            <img src="https://img.icons8.com/?size=50&id=14559&format=png" alt="Icon" class="w-5 h-5">
+            Legal
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="https://img.icons8.com/?size=50&id=79962&format=png" alt="Icon" class="w-5 h-5">
+            Privacy Center
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="https://img.icons8.com/?size=50&id=54623&format=png" alt="Icon" class="w-5 h-5">
+            Privacy Policy
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="https://img.icons8.com/?size=50&id=31092&format=png" alt="Icon" class="w-5 h-5">
+            Cookies
+          </li>
+        </ul>
+      </div>
+
+      <!-- Creator Tools Section -->
+      <div>
+        <h3 class="text-lg text-black font-bold mb-4">Creator tools</h3>
+        <ul class="space-y-2 text-black">
+          <li class="flex items-center gap-2">
+            <img src="https://img.icons8.com/?size=50&id=22415&format=png" alt="Icon" class="w-5 h-5">
+            Help Center
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="https://img.icons8.com/?size=50&id=34071&format=png" alt="Icon" class="w-5 h-5">
+            Megaphone
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="https://img.icons8.com/?size=50&id=45623&format=png" alt="Icon" class="w-5 h-5">
+            Spotify for Artists
+          </li>
+        </ul>
+      </div>
+
+      <!-- Follow Us Section -->
+      <div>
+        <h3 class="text-lg text-black font-bold mb-4">Follow us</h3>
+        <ul class="space-y-2 text-black">
+          <li class="flex items-center gap-2">
+            <img src="https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000" alt="Icon"
+              class="w-5 h-5">
+            Facebook
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Icon"
+              class="w-5 h-5">
+            Instagram
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="https://img.icons8.com/?size=100&id=9a46bTk3awwI&format=png&color=000000" alt="Icon"
+              class="w-5 h-5">
+            YouTube
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!-- Crowdfunding Platforms Build sites where users can start and support funding campaigns, featuring progress tracking,
+    secure payments, and user profiles. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crowdfunding Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-[#543A14] text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Crowdfund</h1>
+      <div class="hidden sm:block">
+        <nav class="space-x-4">
+          <a href="#" class="hover:text-gray-300">Home</a>
+          <a href="#" class="hover:text-gray-300">Campaigns</a>
+          <a href="#" class="hover:text-gray-300">Profile</a>
+          <a href="#" class="hover:text-gray-300">Investor</a>
+          <a href="#" class="hover:text-gray-300">Blogs</a>
+          <a href="#" class="hover:text-gray-300">Contacts</a>
+        </nav>
+      </div>
+      <!-- Menu -->
+      <button class="block sm:hidden text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-[url(https://plus.unsplash.com/premium_photo-1669323926579-4b60e62282e6?q=80&w=1971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center text-center py-8 lg:h-screen sm:py-16 px-4">
+    <h2 class="text-2xl lg:text-6xl sm:text-4xl font-bold mb-4 mt-32">Support the Projects You Love</h2>
+    <p class="text-gray-700 mb-6 lg:mt-8 text-sm lg:text-xl sm:text-base">Join us to make dreams come true by funding innovative ideas.</p>
+    <button class="bg-[#543A14] text-white px-4 lg:text-2xl lg:mt-8 sm:px-7 py-2 rounded hover:bg-[#131010]">Start to funding</button>
+  </section>
+
+  <section class="container mx-auto px-4 sm:px-8 py-10 shadow-2xl shadow-black ">
+    <h3 class="text-3xl font-bold text-center mb-8 ">Explore Campaigns</h3>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-6 lg:gap-8 gap-8b mt-6 ">
+    <!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-6"> -->
+
+      <div class="bg-white shadow-lg rounded-lg p-4 shadow-2xl shadow-black hover:shadow-2xl hover:shadow-black hover:p-4">
+        <img src="https://plus.unsplash.com/premium_photo-1669323925724-bb87080d122d?q=80&w=1953&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Campaign" class="rounded-lg mb-4 w-full">
+        <h4 class="text-lg font-bold mb-2">Innovative Tech <br> Driving Success</h4>
+        <p class="text-gray-600 mb-4">Support this project to bring a revolutionary tech product to life.</p>
+        <div class="bg-gray-200 h-2 w-full rounded-full">
+          <div class="bg-blue-500 h-2 rounded-full" style="width: 80%;"></div>
+        </div>
+        <p class="text-sm text-gray-700 mt-2">Raised: 9,500 / 10,000</p>
+        <button class="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Contribute</button>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg p-4  shadow-2xl shadow-black hover:shadow-2xl hover:shadow-black hover:p-4 ">
+        <img src="https://media.istockphoto.com/id/1716741570/photo/unity-is-diversity.jpg?s=1024x1024&w=is&k=20&c=FyN_wfyaPYxOl0BhWKJd72-iDp-1AoLvYg57Ge6RMi0=" alt="Campaign" class="rounded-lg mb-4 w-full">
+        <h4 class="text-lg font-bold mb-2">Stronger Together, United Forever</h4>
+        <p class="text-gray-600 mb-4">Support this project to bring a revolutionary tech product to life.</p>
+        <div class="bg-gray-200 h-2 w-full rounded-full">
+          <div class="bg-blue-500 h-2 rounded-full" style="width: 70%;"></div>
+        </div>
+        <p class="text-sm text-gray-700 mt-2">Raised: 2,500 / 10,000</p>
+        <button class="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Contribute</button>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg p-4  shadow-2xl shadow-black hover:shadow-2xl hover:shadow-black hover:p-4">
+        <img src="https://plus.unsplash.com/premium_photo-1680721445493-6532fa7e347f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Campaign" class="rounded-lg mb-4 w-full">
+        <h4 class="text-lg font-bold mb-2">Security What Matters Most</h4>
+        <p class="text-gray-600 mb-4">Support this project to bring a revolutionary tech product to life.</p>
+        <div class="bg-gray-200 h-2 w-full rounded-full">
+          <div class="bg-blue-500 h-2 rounded-full" style="width: 80%;"></div>
+        </div>
+        <p class="text-sm text-gray-700 mt-2">Raised: 8,500 / 10,000</p>
+        <button class="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Contribute</button>
+      </div>
+
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-6">
+      <div class="bg-white shadow-lg rounded-lg p-4  shadow-2xl shadow-black hover:shadow-2xl hover:shadow-black hover:p-4">
+        <img src="https://plus.unsplash.com/premium_photo-1700739686189-09c75a198a01?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Campaign" class="rounded-lg mb-4 w-full">
+        <h4 class="text-lg font-bold mb-2">Growth - Empower the Future. <br>High</h4>
+        <p class="text-gray-600 mb-4">Support this project to bring a revolutionary tech product to life.</p>
+        <div class="bg-gray-200 h-2 w-full rounded-full">
+          <div class="bg-blue-500 h-2 rounded-full" style="width: 70%;"></div>
+        </div>
+        <p class="text-sm text-gray-700 mt-2">Raised: $7,500 / $10,000</p>
+        <button class="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Contribute</button>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg p-4  shadow-2xl shadow-black hover:shadow-2xl hover:shadow-black hover:p-4 ">
+        <img src="https://plus.unsplash.com/premium_photo-1700607978955-09f76cfadded?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Campaign" class="rounded-lg h-52 mb-4 w-full">
+        <h4 class="text-lg font-bold mb-2">Maximize Gains, Elevate Your Future.</h4>
+        <p class="text-gray-600 mb-4">Support this project to bring a revolutionary tech product to life.</p>
+        <div class="bg-gray-200 h-2 w-full rounded-full">
+          <div class="bg-blue-500 h-2 rounded-full" style="width: 75%;"></div>
+        </div>
+        <p class="text-sm text-gray-700 mt-2">Raised: $700 / $1000</p>
+        <button class="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Contribute</button>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg p-4  shadow-2xl shadow-black hover:shadow-2xl hover:shadow-black hover:p-4">
+        <img src="https://plus.unsplash.com/premium_photo-1700739310242-28c5122a2489?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Campaign" class="rounded-lg mb-4 w-full">
+        <h4 class="text-lg font-bold mb-2">Driving Success, Fueling Growth.</h4>
+        <p class="text-gray-600 mb-4">Support this project to bring a revolutionary tech product to life.</p>
+        <div class="bg-gray-200 h-2 w-full rounded-full">
+          <div class="bg-blue-500 h-2 rounded-full" style="width: 75%;"></div>
+        </div>
+        <p class="text-sm text-gray-700 mt-2">Raised: $,500 / $1,000</p>
+        <button class="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Contribute</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#543A14] text-white py-6 px-4 text-sm sm:text-base lg:h-screen">
+    <div class="login bg-black lg:mx-auto  lg:flex lg:justify-evenly p-6">
+      <div class="text lg:w-1/2 lg:pr-8 p-8">
+        <h1 class="lg:text-4xl">join Now!</h1>
+      <p class="mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi odio ipsa velit consequatur. Explicabo ducimus, molestiae tempora possimus cum expedita cumque sunt excepturi ea doloribus repellat voluptate dolorum dicta quo?z</p>
+      </div>
+    <div class="form flex justify-center  rounded">
+      <form action="enter" class=" flex flex-col items-center text-center justify-center p-6 align-center ">
+        <input type="text" placeholder="Enter your Name" class="bg-gray-200 w-80 p-2 rounded mt-4">
+        <input type="text" placeholder="Enter your email" class="bg-gray-200 w-80 p-2 rounded mt-4">
+        <input type="text" placeholder="Enter your Password" class="bg-gray-200 w-80 p-2 rounded mt-4">
+        <button class="bg-[#543A14] text-white w-40 p-2 rounded mt-4">Join Now</button>
+      </form>
+    </div>
+      
+      
+
+    </div>
+    <div class="container mx-auto text-center mt-16">
+      <p>&copy; 2024 Crowdfund. All rights reserved.</p>
+      <nav class="space-x-4 mt-4">
+        <a href="#" class="hover:text-gray-300">Privacy Policy</a>
+        <a href="#" class="hover:text-gray-300">Terms of Service</a>
+        <a href="#" class="hover:text-gray-300">Contact Us</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
