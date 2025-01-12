@@ -1,11 +1,213 @@
+<!-- 6. Digital Product Stores Create sites for selling digital goods like templates, e-books, or design assets with secure downloads and membership options. -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <div class="top-nav">
+    <div class="nav-logo border">
+      <div class="logo rounded-full"></div>
+    </div>
+
+    <!-- two -->
+
+    <div class="nav-add border">
+      <p class="first">Deliver to</p>
+      <div class="logo1">
+        <i class="fa-solid fa-location-dot"></i>
+        <p class="second">India</p>
+      </div>
+    </div>
+
+    <!-- three -->
+    <div class="nav-search border">
+      <select class="search-select">
+        <option value="all">All</option>
+      </select>
+      <input placeholder="Search EvoAssets" class="search-input" />
+      <div class="search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+    <!-- Four -->
+    <div class="languages border">
+      <select name="language" id="English" class="bhasa">
+        <option value="English">EN</option>
+      </select>
+    </div>
+    <!-- five -->
+    <div class="signin border">
+      <p class="one">Hello, sign in</p>
+      <div class="signin2">
+        <p class="two">Account & Lists</p>
+      </div>
+    </div>
+
+    <!-- six -->
+    <div class="returnss-order border">
+      <p class="firsts">Returns <span class="return"> & Order </span></p>
+    </div>
+    <!-- seven -->
+    <div class="cart border">
+      <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+      <span class="carts"> Cart </span>
+    </div>
+  </div>
+  <!-- second nav bar -->
+  <div class="second-nav p-4 ">
+    <div class="alls border">
+      <i class="fa-solid fa-bars"></i>
+      <select name="All" id="ALl" class="on">
+        <option value="All">All</option>
+      </select >
+    </div >
+    <!--  todays deals-->
+    <div class="today border">
+      <p>Today deals</p>
+    </div>
+
+    <div class="Custumer-Service border">
+      <p>Customer Service</p>
+    </div>
+
+    <div class="registry border">
+      <p>Registry</p>
+    </div>
+
+    <div class="gift-card border">
+      <p>Gift Card</p>
+    </div>
+
+    <div class="sell border">
+      <p>Sell</p>
+    </div>
+  </div>
+  <!-- nav end -->
+  <div class="hero">
+    <h1 class="text-8xl absolute top-56 left-[35rem] font-mono font-bold bg-white py-[6px]"><span class="bg-[#232f3e] text-white">Evo</span>Assets</h1>
+    <div class="hero-msg">
+      <p>
+        You are on EvoAssets.com. You can also shop on EvoAssets India for millions
+        of products with fast local delivery.
+        <a href=""> Click here to go to EvoAssets.in</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="section3 w-full h-screen  bg-gradient-to-r from-gray-500 to-zinc-200 px-[20px]">
     
+    <div class="row1 w-full h-1/2 flex p-2 gap-2">
+      <div
+        class="u1 w-1/3 h-full p-8 bg-[url(https://plus.unsplash.com/premium_photo-1683120765941-54a1882eed9e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-center bg-cover hover:border-2 shadow-3xl shadow-black">
+        <button class="px-9 py-2 border-black bg-gradient-to-r from-gray-500 to-black-500 rounded hover:border-2">
+          template
+        </button>
+      </div>
+
+      <div
+        class="u2 w-1/3 h-full p-6 bg-[url(https://images.unsplash.com/photo-1603406136476-85d8c3ec76a5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D)] bg-center bg-cover hover:border-2 shadow-3xl shadow-black">
+        <button class="px-9 py-2 border-black bg-gradient-to-r from-gray-500 to-black-500 rounded hover:border-2">
+          e-books
+        </button>
+      </div>
+
+      <div
+        class="up3 w-1/3 h-full p-6 bg-[url(https://images.unsplash.com/photo-1673235966910-f2a443bdbaaf?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-center bg-cover hover:border-2 shadow-3xl shadow-black">
+        <button class="px-9 py-2 border-black text-white bg-gradient-to-r from-gray-500 to-black-500 rounded hover:border-2">
+          Digital art
+        </button>
+      </div>
+    </div>
+    <div class="row2 w-full h-1/2 flex p-2 gap-2">
+      <div
+        class="u4 w-1/3 h-full p-6 bg-[url(https://images.unsplash.com/photo-1588702547919-26089e690ecc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-center bg-cover hover:border-2 shadow-3xl shadow-black">
+        <button class="px-9 py-2 border-black bg-gradient-to-r from-gray-500 to-black-500 rounded hover:border-2">
+          Online courses
+        </button>
+      </div>
+      <div
+        class="u5 w-1/3 h-full p-6 bg-[url(https://images.unsplash.com/photo-1511963118349-e2b22c0efcfc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-center bg-cover hover:border-2 shadow-3xl shadow-black">
+        <button class="px-9 py-2 border-black bg-gradient-to-r from-gray-500 to-black-500 rounded hover:border-2">
+          Craft patterns
+        </button>
+      </div>
+      <div
+        class="u6 w-1/3 h-full p-6 bg-[url(https://images.unsplash.com/photo-1688166965121-8e9dd5776c9f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-center bg-cover hover:border-2 shadow-3xl shadow-black">
+        <button class="px-9 py-2 border-black bg-gradient-to-r from-gray-500 to-black-500 rounded hover:border-2">
+          Stock photography
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+  <footer>
+    <div class="back-top font-bold text-2xl px-9 py-2 border-black bg-gradient-to-r from-gray-500 to-black-500 rounded hover:border-2">Back to top</div>
+
+    <div class="pannels ">
+      <div class="panel1 grid grid-cols-4 gap-32 ">
+        <ul>
+          <p>Get to Know Us</p>
+          <a>Careers</a>
+          <a>Blog</a>
+          <a>About EvoAssets</a>
+          <a>Investor Relations</a>
+          <a>EvoAssets Devices</a>
+          <a>EvoAssets Science</a>
+        </ul>
+
+        <ul>
+          <p>Get to Know Us</p>
+          <a>Careers</a>
+          <a>Blog</a>
+          <a>About EvoAssets</a>
+          <a>Investor Relations</a>
+          <a>EvoAssets Devices</a>
+          <a>EvoAssets Science</a>
+        </ul>
+
+        <ul>
+          <p>Get to Know Us</p>
+          <a>Careers</a>
+          <a>Blog</a>
+          <a>About 
+          </a>
+          <a>Investor Relations</a>
+          <a>EvoAssets Devices</a>
+          <a>EvoAssets Science</a>
+        </ul>
+
+        <ul>
+          <p>Get to Know Us</p>
+          <a>Careers</a>
+          <a>Blog</a>
+          <a>About EvoAssets</a>
+          <a>Investor Relations</a>
+          <a>EvoAssets Devices</a>
+          <a>EvoAssets Science</a>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="text">
+        <a>Conditions of Use</a>
+        <a> Privacy Notice </a>
+        <a>Your Ads Privacy Choices</a>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
