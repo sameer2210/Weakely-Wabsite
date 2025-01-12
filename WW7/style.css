@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .main {
+    /* display: flex; */
+    /* position:relative; */
+    /* padding: 1px; */
+    height: 100%;
+    width: 100%;
+    /* background-color: blueviolet; */
+    background-image: url(https://images.unsplash.com/photo-1520262454473-a1a82276a574?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+  }
+  .overlay1 {
+    /* margin-left: 62.5%; */
+    position: absolute;
+    height: 100%;
+    width: 62.5%;
+    /* background-color:    rgba(0, 0, 0, 0.153); */
+  }
+  i {
+    position: absolute;
+    padding: 3%;
+  }
+  #text1 {
+    position: absolute;
+    height: 23%;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 10%;
+    padding: 2%;
+    /* background-color: red; */
+    text-align: center;
+  }
+  #text1 h2 {
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: 300;
+  }
+  #text1 h1 {
+    font-size: 40px;
+    font-family: "monospace";
+    font-weight: 700;
+    letter-spacing: 9px;
+  }
+  #text1 p {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 16px;
+  }
+  #box1 {
+    position: absolute;
+    margin-top: 20px;
+    width: 50%;
+    height: 30%;
+    background-color: black;
+    border-radius: 5px;
+  }
+  #box1 h3 {
+    padding: 6%;
+    font-size: 15px;
+    font-family: Helvetica;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+  }
+  #box2 {
+    position: absolute;
+    margin-top: 29px;
+    margin-left: 50%;
+    width: 40%;
+    height: 30%;
+    /* background-color: black; */
+  }
+  #box2 a {
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+  }
+  
+  /* ----------------------------------------------------------------------- */
+  .overlay2 {
+    margin-left: 62.5%;
+    /* margin-top: 1px; */
+    position: absolute;
+    /* position: relative; */
+    height: 100%;
+    width: 37.5%;
+    background-color: rgba(0, 0, 0, 0.519);
+  }
+  nav {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 3%;
+    padding: 2%;
+    height: 7.5%;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+  }
+  nav a {
+    margin: 10px;
+    font-size: 15px;
+    color: black;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+  
+  #text2 {
+    /* position: absolute; */
+    height: 25%;
+    width: 55%;
+    margin-left: 40%;
+    margin-top: 50%;
+    padding: 2%;
+    /* background-color: red; */
+    text-align: right;
+    color: white;
+  }
+  #text2 h1 {
+    font-size: 26px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: 300;
+    color: white;
+    text-shadow: 2px 3px 3px rgb(0, 0, 0);
+  
+  
+  }
+  #text2 p {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    line-height: 16px;
+    opacity: 80%;
+    color: white;
+  }
+  
+  #text3 {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    height: 32%;
+    width: 100%;
+    margin-top: 30%;
+    /* background-color: red; */
+  }
+  #text3 #t1 {
+    padding: 4%;
+    width: 25%;
+  }
+  #text3 i {
+    margin: 20px;
+    bottom: 90px;
+    /* color: white; */
+  }
+  #text3 h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+  }
+  #text3 p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+  #text3 #t2 {
+    padding: 4%;
+    width: 25%;
+  }
+  #text3 #t3 {
+    padding: 4%;
+    width: 25%;
+  }
+  #text3 #t3 i {
+    margin: 20px;
+    bottom: 90px;
+    color: white;
+  }
+  #text3 #t3 h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: white;
+  }
+  #text3 #t3 p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+    color: white;
+  }
+  
+  /* ------------------------------------------------------------------------------------ */
+  
+  .page2 {
+    position: absolute;
+    margin-top: 44.2%;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    /* background: linear-gradient(rgba(0, 0, 0, 0.1),
+                                  rgba(0, 0, 0, 0.4),
+                                  rgba(0, 0, 0, 0.7),
+                                  rgba(0, 0, 0, 0.9)); */
+  
+    background: linear-gradient(
+      to left top,
+      rgba(0, 0, 0, 0.0),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.9)
+    );
+    /* background: linear-gradient(to right, rgb(216, 179, 255), rgb(37, 117, 252)); */
+    display: flex;
+    padding-top: 5%;
+    justify-content: space-around;
+  }
+  
+  .container1 {
+    height: 80%;
+    width: 60%;
+    padding: 2%;
+    background-color: white;
+    line-height: 35px;
+    /* color: white; */
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+  }
+  
+  .row {
+      /* color: white; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 25px;
+  }
+  
+  .container2 {
+    position: relative;
+    height: 80%;
+    width: 25%;
+    padding: 3%;
+    margin-right: 3%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 3px 4px 5px rgb(0, 0, 0, 0.9), 3px 4px 5px rgba(255, 70, 70, 0.5),
+      3px 4px 5px rgb(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+  .container2 i {
+    position: absolute;
+    font-size: 35px;
+    left: 42%;
+    top: 3px;
+    text-shadow: black;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container2 h3 {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+  .container2 p {
+    margin-top: 4px;
+    font-family: "Arial Narrow Bold", sans-serif;
+    font-weight: 100;
+    line-height: 25px;
+  }
+  
+  form {
+    max-width: 300px;
+    padding: 20px;
+    margin-top: 2px;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.085);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  }
+  form input[type="text"]{
+      width: 100%;
+      padding: 8px;
+      /* margin-top: 5px; */
+      margin-bottom: 10px;
+      border:1px solid black;
+      border-radius: 5px;
+      /* box-sizing: border-box; */
+  }
+  form input[type="checkbox"]{
+      margin-right: 3px;
+  }
+  form button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 9px;
+      background-color: #000000;
+      color: #fff;
+      border: 1px solid black;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 18px;
+      font-family: 'Anurati';
+      letter-spacing: 2px;
+  }
+    
+  form button:hover {
+      background-color: #ffffff;
+      color: black;
+  }
+  
+  /* --------------------------------------------------------------------------------------------------- */
+  
+  .page3{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 200%;
+      background-color: red;
+  }
+
+  
